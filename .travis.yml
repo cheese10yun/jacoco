@@ -3,9 +3,9 @@ language: java
 jdk:
     - openjdk8
 
-#env:
-#  global:
-#    - CODECOV_TOKEN = d116be9b-435a-42f3-a4c2-224be876d3f9
+env:
+    global:
+        - CODECOV_TOKEN="f9785a90-d5af-416f-ad9e-5f4883f41041"
 
 install: true
 
@@ -16,9 +16,8 @@ cache:
         - '$HOME/.m2/repository'
         - '$HOME/.gradle'
 
-#after_success:
-# - mvn clean cobertura:cobertura coveralls:report
-# - bash <(curl -s https://codecov.io/bash)
+after_success:
+ - bash <(curl -s https://codecov.io/bash)
 
 branches:
     only:

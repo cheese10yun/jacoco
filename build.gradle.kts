@@ -4,6 +4,7 @@ plugins {
     id("org.springframework.boot")
     id("io.spring.dependency-management")
     id("jacoco")
+    id("com.github.kt3k.coveralls") version("2.8.4")
     kotlin("jvm")
     kotlin("plugin.spring")
     kotlin("plugin.jpa")
