@@ -1,7 +1,7 @@
 language: java
 
 jdk:
-  - openjdk8
+    - openjdk8
 
 #env:
 #  global:
@@ -21,9 +21,9 @@ cache:
 # - bash <(curl -s https://codecov.io/bash)
 
 branches:
- only:
-    - master
+    only:
+        - master
 
 notifications:
-  slack: cheese-dev:JXKSTVY4wHsMPbJi2uoKtyxs
-  email: false
+    slack: cheese-dev:JXKSTVY4wHsMPbJi2uoKtyxs
+    email: false
