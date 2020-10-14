@@ -17,5 +17,6 @@ internal class MemberServiceTest {
 
         //then
         then(member.name).isEqualTo(findMember.name)
+        then(member.email).isEqualTo("emad@asd.com")
     }
 }
