@@ -8,11 +8,11 @@ internal class MemberServiceTest {
     @Test
     internal fun `member test`() {
         //given
-        val member = Member(name = "name", email = "emad@asd.com")
+        val member = Member(name = "yun", email = "emad@asd.com")
         val memberService = MemberService()
 
         //when
-        val findMember = memberService.findByName("name")
+        val findMember = memberService.findByName("yun")
 
         //then
         then(member.name).isEqualTo(findMember.name)
