@@ -5,7 +5,6 @@ import org.assertj.core.api.BDDAssertions.then
 import org.junit.jupiter.api.Test
 
 internal class MemberServiceTest {
-
     @Test
     internal fun `member test`() {
         //given
